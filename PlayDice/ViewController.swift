@@ -28,6 +28,18 @@ class ViewController: UIViewController {
     @IBAction func ramdomDiceButtom(_ sender: UIButton) {
         
         print("You Click Ramdom")
+//        for Dice1
+        let indexDice1: Int = Int.random(in: 0 ... 5)
+        firstDiceImageView.image = UIImage(named: sourceDices[indexDice1])
+        
+//        for Dice2
+        let indexDice2: Int = Int.random(in: 0 ... 5)
+        secondDiceImageView.image = UIImage(named: sourceDices[indexDice2])
+        
+//        for Dice3
+        let indexDice3 = Int.random(in: 0 ... 5)
+        thirdDiceImageView.image = UIImage(named: sourceDices[indexDice3])
+        
         
         
     
